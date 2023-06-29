@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Практика</title>
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand mx-5">Radio API</a>
+      <button class="btn btn-outline-success my-2 my-sm-0 mx-5" type="submit" onclick="location.reload()"> 
+        Перезагрузить страницу
+      </button>
+  </nav>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm">
+          <div class="mb-3">
+            <label for="" class="form-label" id="">Страна</label>
+            <select class="form-select form-select-lg" name="" id="country">
+              <option selected="">Выбрать страну...</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="mb-3">
+            <label for="" class="form-label" id="genre">Жанры</label>
+            <select class="form-select form-select-lg" name="" id="genres">
+              <option selected="">Выбрать жанр...</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="mt-4">
+            <button type="button" class="btn btn-outline-primary" onclick="getStation()">
+              Начать поиск случайной станции
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-light text-center text-lg-start fixed-bottom">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        Сделал в 2023:
+        <a class="text-dark" href="#">Станислав Лапин</a>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
